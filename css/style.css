@@ -15,7 +15,13 @@
     background-color: var(--white);
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
+
+/* REGOLE MAIN */
 .card {
     width: 60%;
     margin: 50px auto;
@@ -33,5 +39,25 @@
     color: var(--dkpink);
     font-size: 25px;
     padding: 10px;
+}
+
+/* regole mail */
+#user_input {
+    display: block;
+    width: 80%;
+    margin: 50px auto;
+    padding: 15px;
     border: dashed 4px var(--dkpink);
+    border-radius: 20px;
+    background-color: var(--white);
+    color: var(--blue);
+    font-size: larger;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.button {
+    background-color: var(--blue);
+    color: var(--grey);
+    padding: 10px 40px;
+    border-radius: 20px;
 }
