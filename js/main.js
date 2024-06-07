@@ -31,20 +31,31 @@
 
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. 
 
-const userPlay = Math.floor(Math. random()*6) + 1;
-document.getElementById("user_play").innerHTML = userPlay;
+const buttonLancia = document.getElementById("lancia");
 
-const computerPlay = Math.floor(Math. random()*6) + 1;
-document.getElementById("computer_play").innerHTML = computerPlay;
+buttonLancia.addEventListener ("click",
 
-// Stabilire il vincitore, in base a chi fa il punteggio più alto.
+    function () {
 
-if (userPlay > computerPlay) {
-    document.querySelector(".winner").innerHTML = "!! HAI VINTO !!";
-    
-} else if (computerPlay > userPlay) {
-    document.querySelector(".winner").innerHTML = "!! HAI PERSO !!";
-}
+        const userPlay = Math.floor(Math. random()*6) + 1;
+        document.getElementById("user_play").innerHTML = userPlay;
+
+        const computerPlay = Math.floor(Math. random()*6) + 1;
+        document.getElementById("computer_play").innerHTML = computerPlay;
+
+        // Stabilire il vincitore, in base a chi fa il punteggio più alto.
+
+        if (userPlay > computerPlay) {
+            document.querySelector(".winner").innerHTML = "!! HAI VINTO !!";
+            
+        } else if (computerPlay > userPlay) {
+            document.querySelector(".winner").innerHTML = "!! HAI PERSO !!";
+        }
+
+    }
+)
+
+
 
 
 

@@ -95,3 +95,9 @@ a {
     color: var(--blue);
     margin-bottom: 40px;
 }
+
+.winner {
+    margin-top: 40px;
+    font-size: 30px;
+    color: var(--blue);
+}
