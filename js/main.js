@@ -1,27 +1,27 @@
-// 1.Chiedi all’utente la sua email, 
-    // 1a.inserisci prompt che sarà la costante email
-    const userEmail= prompt("inserisci la tua email")
-    console.log(userEmail);
+// // 1.Chiedi all’utente la sua email, 
+//     // 1a.inserisci prompt che sarà la costante email
+//     const userEmail= prompt("inserisci la tua email")
+//     console.log(userEmail);
 
-// 2.controlla che sia nella lista di chi può accedere, 
-    // 2a.creare lista di chi può accedere
-    const accessList = ["mariorossi@mail.it", "luciabianchi@mail.it", "marcoverdi@mail.it", "giulianeri@mail.com"];
+// // 2.controlla che sia nella lista di chi può accedere, 
+//     // 2a.creare lista di chi può accedere
+//     const accessList = ["mariorossi@mail.it", "luciabianchi@mail.it", "marcoverdi@mail.it", "giulianeri@mail.com"];
 
-    let access= "accesso negato"
-    // 2b.confrontare il valore della costante con gli elementi della lista
-    for (let i = 0; i < accessList.length; i++) {
+//     let access= "accesso negato"
+//     // 2b.confrontare il valore della costante con gli elementi della lista
+//     for (let i = 0; i < accessList.length; i++) {
         
-        const accessGranted = accessList[i];
-        console.log("Accesso Garantito: ", accessGranted);
+//         const accessGranted = accessList[i];
+//         console.log("Accesso Garantito: ", accessGranted);
 
-        if (userEmail === accessGranted) {
+//         if (userEmail === accessGranted) {
             
-            access = "accesso garantito"
+//             access = "accesso garantito"
             
-        } 
-    }
+//         } 
+//     }
 
-    document.write(access);
+//     document.write(access);
 
     
 
@@ -32,18 +32,18 @@
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. 
 
 const userPlay = Math.floor(Math. random()*6) + 1;
-console.log(userPlay);
+document.getElementById("user_play").innerHTML = userPlay;
 
 const computerPlay = Math.floor(Math. random()*6) + 1;
-console.log(computerPlay);
+document.getElementById("computer_play").innerHTML = computerPlay;
 
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 if (userPlay > computerPlay) {
-    document.write("HAI VINTO!!")
+    document.querySelector(".winner").innerHTML = "!! HAI VINTO !!";
     
 } else if (computerPlay > userPlay) {
-    document.write("HAI PERSO!!")
+    document.querySelector(".winner").innerHTML = "!! HAI PERSO !!";
 }
 
 
