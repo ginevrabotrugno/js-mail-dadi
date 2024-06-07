@@ -39,20 +39,7 @@ a {
     color: var(--dkpink);
     font-size: 25px;
     padding: 10px;
-}
-
-/* regole mail */
-#user_input {
-    display: block;
-    width: 80%;
-    margin: 50px auto;
-    padding: 15px;
-    border: dashed 4px var(--dkpink);
-    border-radius: 20px;
-    background-color: var(--white);
-    color: var(--blue);
-    font-size: larger;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    margin: 25px 0 40px;
 }
 
 .button {
@@ -60,4 +47,51 @@ a {
     color: var(--grey);
     padding: 10px 40px;
     border-radius: 20px;
+    font-weight: 600;
+}
+
+.label {
+    border: dashed 4px var(--dkpink);
+    background-color: var(--white);
+    color: var(--blue);
+    font-size: larger;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* regole mail */
+#user_input {
+    display: block;
+    padding: 15px;
+    width: 80%;
+    margin: 0 auto 40px;
+    border-radius: 20px;
+}
+
+
+/* regole dadi */
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col_20 {
+    width: 20%;
+    aspect-ratio: 1/ 1;
+    border-radius: 50%;
+    margin-top: 40px;
+    position: relative;
+}
+
+.col_20 span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--blue);
+    font-size: larger;
+}
+
+.instructions {
+    color: var(--blue);
+    margin-bottom: 40px;
 }
