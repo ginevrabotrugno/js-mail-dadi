@@ -4,3 +4,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+    --pink: #edc8b8;
+    --white: #ede2dc;
+    --grey: #bbb2b5;
+    --blue: #123d6a;
+    --dkpink: #ab3b61;
+    background-color: var(--white);
+}
+
+
+.card {
+    width: 60%;
+    margin: 50px auto;
+    border-radius: 20px;
+    background-color: var(--pink);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    text-align: center;
+
+    /* debug */
+    min-height: 500px;
+}
+
+.title {
+    color: var(--dkpink);
+    font-size: 25px;
+    padding: 10px;
+    border: dashed 4px var(--dkpink);
+}
