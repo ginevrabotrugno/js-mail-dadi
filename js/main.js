@@ -20,10 +20,11 @@ buttonAccedi.addEventListener("click",
             if (userEmail === accessGranted) {
                 
                 access = "!! ACCESSO GARANTITO !!"
+                document.getElementById("access").innerHTML = access;
                 
             } 
         }
-        document.getElementById("access").innerHTML = access;
+        
     }
 )
 
