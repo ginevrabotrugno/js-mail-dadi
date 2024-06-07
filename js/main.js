@@ -29,7 +29,24 @@
 
 
 
-// Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. Stabilire il vincitore, in base a chi fa il punteggio più alto.
+// Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. 
+
+const userPlay = Math.floor(Math. random()*6) + 1;
+console.log(userPlay);
+
+const computerPlay = Math.floor(Math. random()*6) + 1;
+console.log(computerPlay);
+
+// Stabilire il vincitore, in base a chi fa il punteggio più alto.
+
+if (userPlay > computerPlay) {
+    document.write("HAI VINTO!!")
+    
+} else if (computerPlay > userPlay) {
+    document.write("HAI PERSO!!")
+}
+
+
 
 // Consigli del giorno:
 // 1. scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
