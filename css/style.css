@@ -30,9 +30,6 @@ a {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     padding: 25px;
     text-align: center;
-
-    /* debug */
-    min-height: 500px;
 }
 
 .title {
@@ -96,8 +93,11 @@ a {
     margin-bottom: 40px;
 }
 
-.winner {
+.winner, #access {
     margin-top: 40px;
     font-size: 30px;
     color: var(--blue);
+    padding: 20px;
+    border: solid 4px var(--blue);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }

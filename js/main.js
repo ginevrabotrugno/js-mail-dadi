@@ -1,27 +1,32 @@
-// // 1.Chiedi all’utente la sua email, 
-//     // 1a.inserisci prompt che sarà la costante email
-//     const userEmail= prompt("inserisci la tua email")
-//     console.log(userEmail);
+// 1.Chiedi all’utente la sua email, 
+// 1a.inserisci l'input che sarà la costante email
+const userEmail= document.getElementById("user_input").value
+const buttonAccedi = document.getElementById("accedi");
 
-// // 2.controlla che sia nella lista di chi può accedere, 
-//     // 2a.creare lista di chi può accedere
-//     const accessList = ["mariorossi@mail.it", "luciabianchi@mail.it", "marcoverdi@mail.it", "giulianeri@mail.com"];
+buttonAccedi.addEventListener("click",
+    function() {
+        // 2.controlla che sia nella lista di chi può accedere, 
+        // 2a.creare lista di chi può accedere
+        const accessList = ["mariorossi@mail.it", "luciabianchi@mail.it", "marcoverdi@mail.it", "giulianeri@mail.com"];
 
-//     let access= "accesso negato"
-//     // 2b.confrontare il valore della costante con gli elementi della lista
-//     for (let i = 0; i < accessList.length; i++) {
+        let access= "!! ACCESSO NEGATO !!"
+
+        // 2b.confrontare il valore della costante con gli elementi della lista
+        for (let i = 0; i < accessList.length; i++) {
+    
+            const accessGranted = accessList[i];
+            console.log("Accesso Garantito: ", accessGranted);
         
-//         const accessGranted = accessList[i];
-//         console.log("Accesso Garantito: ", accessGranted);
+            if (userEmail === accessGranted) {
+                
+                access = "!! ACCESSO GARANTITO !!"
+                
+            } 
+        }
+        document.getElementById("access").innerHTML = access;
+    }
+)
 
-//         if (userEmail === accessGranted) {
-            
-//             access = "accesso garantito"
-            
-//         } 
-//     }
-
-//     document.write(access);
 
     
 
