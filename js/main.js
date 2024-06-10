@@ -2,14 +2,16 @@
 
 // 1.Chiedi all’utente la sua email, 
 // 1a.inserisci l'input che sarà la costante email
-const userEmail= document.getElementById("user_input").value
+
 const buttonAccedi = document.getElementById("accedi");
+const accessList = ["mariorossi@mail.it", "luciabianchi@mail.it", "marcoverdi@mail.it", "giulianeri@mail.com"];
+
 
 buttonAccedi.addEventListener("click",
     function() {
         // 2.controlla che sia nella lista di chi può accedere, 
         // 2a.creare lista di chi può accedere
-        const accessList = ["mariorossi@mail.it", "luciabianchi@mail.it", "marcoverdi@mail.it", "giulianeri@mail.com"];
+        const userEmail= document.getElementById("user_input").value
 
         let access= "!! ACCESSO NEGATO !!"
 
@@ -22,11 +24,11 @@ buttonAccedi.addEventListener("click",
             if (userEmail === accessGranted) {
                 
                 access = "!! ACCESSO GARANTITO !!"
-                document.getElementById("access").innerHTML = access;
                 
             } 
         }
         
+        document.getElementById("access").innerHTML = access;
     }
 )
 
